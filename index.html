@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="form.css">
+  <title>Frontend Mentor | Contact form</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="cont">
+    <h3>Contact Us</h3>
+      
+    <div class="name-inp">
+      <div class="first-namee">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name">
+            <p id="firstname-warn"></p> 
+
+      </div>
+    
+      <div class="last-namee">
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name">
+      <p id="lastname-warn"></p>
+      </div> 
+    
+    </div>
+
+      <div class="email-inp">
+          <label for="email">Email Address</label>
+          <input type="email" name="email" id="email">
+          <p id="email-warn"></p>
+          </div> 
+      
+      <div class="gender-inp">
+        <label for="gender" class="gender-label">for what this ?</label>
+        <div class="gender-options">
+            <label for="male" class="male-la">
+                <input type="radio" name="gender" id="male" value="male">
+                Complaint
+            </label>
+            <label for="female" class="female-la">
+                <input type="radio" name="gender" id="female" value="female">
+                Suggestion
+            </label>
+        </div>
+    </div>
+    
+      <div class="message">
+        <label for="message" class="message-label">message</label>
+        <textarea type="text" name="message" id="message-inp" class="message-inp" rows="4" cols="5"></textarea>
+
+      </div>
+      
+        <div class="accept">
+          <input type="checkbox" name="accept" id="accept" class="accept-inp" required>
+
+          <label class="pp">Are you sure about everything you wrote..?
+        </label>
+        </div>
+        
+        <div class="warns">
+        </div>
+        <div class="submit">
+          <button class="submit-btn" id="submit-btn">Submit</button>
+
+        </div>
+      
+      
+
+  </div>
+
+  <script src="form.js"></script>
+  
+</body>
+</html>
